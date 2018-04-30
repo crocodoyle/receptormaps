@@ -10,6 +10,7 @@ if __name__ == '__main__':
     fixed_image = sitk.ReadImage(data_dir + histological_slice)
 
     for filename in os.listdir(data_dir):
+        print(filename)
         if not filename == histological_slice:
             moving_image = sitk.ReadImage(data_dir + filename)
 
